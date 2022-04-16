@@ -1,1 +1,228 @@
-htmlko  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* h1,strong,p {
+  font-size: inherit;
+  font-weight: inherit;
+} */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* design  */
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #ffffff;
+}
+
+button {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.item-name {
+  font-size: 9px;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.sc-out {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  margin: -1;
+  overflow: hidden;
+}
+
+.logo-img {
+  display: block;
+  width: 166px;
+  height: 71.12px;
+  margin: 0 auto;
+}
+
+.select-part {
+  width: 360px;
+  background-color: #fff;
+  padding: 31px 27px;
+}
+
+.my-cola {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.cola-item {
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 10px 9px 11px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cola-item:hover,
+.cola-item:focus,
+.cola-item:active {
+  outline: 3px solid #6327FE;
+  white-space: nowrap;
+}
+
+.cola-item .item-name {
+  margin-top: 6px;
+}
+
+.price {
+  margin-top: 7px;
+  line-height: 1;
+  font-size: 12px;
+  color: #fff;
+  background: #6327FE;
+  border-radius: 50px;
+  padding: 5px 16px 5px 15px;
+}
+
+.balance {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  background: #EAE8FE;
+  border-radius: 5px;
+  padding: 6px 10px 7px 10px;
+}
+
+.money-btn {
+  width: 94px;
+  font-size: 13px;
+  line-height: 1.46;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.input-money {
+  width: 200px;
+  height: 32px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+}
+
+.input-money::placeholder {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.46;
+  color: #BDBDBD;
+  padding: 6px;
+}
+
+.get-btn {
+  width: 94px;
+  height: 106px;
+  background: #6327FE;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 1.46;
+  font-weight: 500;
+  color: #fff;
+}
+
+.cola-get {
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  overflow-y: scroll;
+  background: #EAE8FE;
+  padding: 12px;
+}
+
+.cola-get.min {
+  width: 200px;
+  height: 106px;
+}
+
+.order-item {
+  position: relative;
+  width: 170px;
+  background-color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.order-item img {
+  display: block;
+  width: 18px;
+}
+
+.order-item .item-name {
+  margin-left: 10px;
+  width: 73px;
+  font-weight: 500;
+}
+
+
+.numberof {
+  position: absolute;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26.27px;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.get-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+
+.cola-get.wide {
+  width: 306px;
+  height: 364px;
+}
+
+.cola-get.wide .order-item {
+  width: 100%;
+}
+
+/* 스크롤바 패딩값  */
+::-webkit-scrollbar {
+  /* scroll-margin: 0; */
+  width: 4px;
+  height: 79px;
+  padding: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 50px;
+}
