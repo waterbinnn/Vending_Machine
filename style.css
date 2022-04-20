@@ -28,6 +28,11 @@ button {
   cursor: pointer;
 }
 
+span,strong {
+  display: inline-block;
+}
+
+
 .sc-out {
   position: absolute;
   width: 1px;
@@ -68,24 +73,15 @@ button {
   position: relative;
   box-sizing: border-box;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 11px 10px 9px 11px;
+  text-align: center;
+  padding: 10px 10px 9px 11px;
   background-color: #fff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
-.cola-item:hover,
 .cola-item:focus,
 .cola-item:active {
   outline: 3px solid #6327FE;
-  white-space: nowrap;
-}
-
-.cola-item .item-name {
-  margin-top: 6px;
 }
 
 .cola-item.sold-out::after {
@@ -140,7 +136,6 @@ button {
 }
 
 .money-btn {
-  width: 94px;
   font-size: 13px;
   line-height: 19px;
   font-weight: 500;
@@ -269,17 +264,10 @@ button {
   margin-top: 6px;
 }
 
-.getpart-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* 스크롤바 패딩값  */
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
   height: 79px;
 }
 
@@ -287,7 +275,7 @@ button {
   border-radius: 50px;
   background: #FFFFFF;
   background-clip: padding-box;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
 }
 
 
@@ -325,17 +313,20 @@ button {
     width: 360px;
     padding: 9px 27px;
     background-color: #fff;
-    margin: 0 auto;
   }
 
   .get-wrapper {
     background-color: #fff;
-    margin: 20px 28px;
-
+    margin-top: 20px;
   }
 
   .getpart-wrapper {
     float: right;
+    margin-left: 28px;
+  }
+
+  .input-money::placeholder {
+    text-align: left;
   }
 
 }
