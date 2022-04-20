@@ -83,20 +83,35 @@ span,strong {
 .cola-item:active {
   outline: 3px solid #6327FE;
 }
+.cola-item.sold-out {
+  pointer-events: none;
+}
 
 .cola-item.sold-out::after {
   content: '';
   display: block;
   position: absolute;
-  left: -0.5px;
-  bottom: 0.2px;
-  background: url(./images/soldOut.svg) no-repeat;
-  background-size: cover;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: url(./images/Sold-out.svg) no-repeat;
+  background-size: 64px;
   background-position: center;
-  width: 94.5px;
-  height: 130px;
+  background-color: rgba(0,0,0,50%);
   border-radius: 10px;
 }
+
+.select-part .cola-item li.sold-out::after {
+  content: '품절';
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 1px;
+  color: transperant;
+}
+
 
 
 .charge-wrapper {
@@ -120,8 +135,6 @@ span,strong {
 
 .balance {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
@@ -129,6 +142,10 @@ span,strong {
   border-radius: 5px;
   padding: 6px 10px 7px 10px;
   margin: 0 auto;
+}
+
+.balance span{
+  float: right;
 }
 
 .balance.having {
@@ -186,7 +203,7 @@ span,strong {
 }
 
 .cola-get.min {
-  width: 200px;
+  width: 200px; 
   height: 106px;
 }
 
@@ -227,14 +244,14 @@ span,strong {
   border-radius: 5px;
 }
 
-.balance.having {
-  margin-bottom: 6px;
-}
-
 .get-wrapper {
-  width: 360px;
   margin: 0 auto;
   padding: 26px 27px;
+
+}
+
+.getpart-wrapper {
+  width: 360px;
 }
 
 .get-title {
@@ -304,7 +321,7 @@ span,strong {
   .select-part {
     float: left;
   }
-
+  
   .balance.having {
     margin-bottom: 0;
   }
