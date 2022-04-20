@@ -46,7 +46,6 @@ button {
 
 .select-part {
   width: 360px;
-  height: 545px;
   background-color: #fff;
   padding: 31px 27px;
   margin: 0 auto;
@@ -220,7 +219,7 @@ button {
 }
 
 
-.numberof {
+.item-number {
   position: absolute;
   right: 8px;
   width: 30px;
@@ -318,6 +317,7 @@ button {
 
   .select-part {
     float: left;
+    height: 545px;
   }
 
   .balance.having {
