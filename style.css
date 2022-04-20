@@ -47,7 +47,7 @@ button {
 .select-part {
   width: 360px;
   background-color: #fff;
-  padding: 31px 27px;
+  padding: 27px;
   margin: 0 auto;
 }
 
@@ -238,7 +238,6 @@ button {
 
 .get-wrapper {
   width: 360px;
-  height: 474px;
   margin: 0 auto;
   padding: 26px 27px;
 }
@@ -316,7 +315,6 @@ button {
 
   .select-part {
     float: left;
-    height: 545px;
   }
 
   .balance.having {
