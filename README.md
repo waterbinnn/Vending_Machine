@@ -50,11 +50,11 @@
 해주면서도 `li` 안에 `button`을 써주는게 맞을 것 같았지만,,, <br>
 `button` 안에 `<p>` 태그가 들어가면 안된다는 것이 생각이 나서 그냥 1,000원 부분만 `button`으로 마크업 해주었었다. 
 
-```
- <li class="cola-item">
-      <img src="./images/Original_Cola.svg" alt="">
-      <p class="item-name">Original_Cola</p>
-      <button type="button" class="price">1000원</button>
+```html
+<li class="cola-item">
+    <img src="./images/Original_Cola.svg" alt="">
+    <p class="item-name">Original_Cola</p>
+    <button type="button" class="price">1000원</button>
 </li>
 
 ```
@@ -64,13 +64,13 @@
 😲 :  아 왜 저 생각을 못했을까 ..? 
 
 
-```
+```html
 <li>
-	<button type="button" class="cola-item">
-	<img src="./images/Original_Cola.svg" alt="">
-	<strong class="item-name">Original_Cola</strong>
-	<span class="price">1000원</span>
-	</button>
+    <button type="button" class="cola-item">
+      <img src="./images/Original_Cola.svg" alt="">
+      <strong class="item-name">Original_Cola</strong>
+      <span class="price">1000원</span>
+    </button>
 </li>
 ```
 
@@ -96,12 +96,12 @@
 세가지 섹션이지만, 나뉘어진건 두 파트라고 생각했기 때문에 소지금 & 획득한 음료을 한번 더 묶어서 두 파트로 나누었다. <br>
 `밴딩머신 주문 영역 따로 <-> 소지금 & 획득한 음료 `
 
-```
+```html
 <section class="select-part"> ...</section>
 
 <div class="getpart-wrapper">
-	<section class="having-money">... </section>
-	<section class="get-wrapper">...</section>
+    <section class="having-money">... </section>
+    <section class="get-wrapper">...</section>
 </div>
 ```
 
@@ -151,7 +151,7 @@ alignt-item: center;
 ```css
 .cola-item:focus,
 .cola-item:active {
-  outline: 3px solid #6327FE;
+     outline: 3px solid #6327FE;
 }
 ```
 
@@ -255,7 +255,7 @@ alignt-item: center;
 
 갠적으로 플로트가 조금 어렵게 느껴졌는데 밴딩머신을 만들며 조금 이해해가고 있는 듯하다? <br><br>
 ![](https://velog.velcdn.com/images/ewaterbin/post/1ef169db-3916-40cb-86e5-150748992f42/image.png)<br><br>
-```
+```html
 <div class="info-balance">
 잔액 :
 <span class="txt-balance">원</span>
