@@ -28,7 +28,8 @@ button {
   cursor: pointer;
 }
 
-span,strong {
+span,
+strong {
   display: inline-block;
 }
 
@@ -83,6 +84,7 @@ span,strong {
 .cola-item:active {
   outline: 3px solid #6327FE;
 }
+
 .cola-item.sold-out {
   pointer-events: none;
 }
@@ -98,7 +100,7 @@ span,strong {
   background: url(./images/Sold-out.svg) no-repeat;
   background-size: 64px;
   background-position: center;
-  background-color: rgba(0,0,0,50%);
+  background-color: rgba(0, 0, 0, 50%);
   border-radius: 10px;
 }
 
@@ -144,12 +146,13 @@ span,strong {
   margin: 0 auto;
 }
 
-.balance span{
-  float: right;
-}
-
 .balance.having {
   width: 306px;
+}
+
+.balance-txt {
+  display: flex;
+  justify-content: space-between;
 }
 
 .money-btn {
@@ -203,7 +206,7 @@ span,strong {
 }
 
 .cola-get.min {
-  width: 200px; 
+  width: 200px;
   height: 106px;
 }
 
@@ -321,7 +324,7 @@ span,strong {
   .select-part {
     float: left;
   }
-  
+
   .balance.having {
     margin-bottom: 0;
   }
