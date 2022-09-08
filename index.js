@@ -1,5 +1,3 @@
-import data from './data.js';
-
 const $itemList = document.querySelector('#cola-list');
 const $item = document.querySelectorAll('.cola-item'); //콜라 버튼 아이템 li
 
@@ -17,23 +15,14 @@ const $total = document.querySelector('#total-money'); // 총금액
 const $obtainBtn = document.querySelector('#obtain-btn'); //획득 버튼
 const $paymentBtn = document.querySelector('#payment-btn'); // 입금 버튼
 
-console.log(data);
-
-// 잔액 , 입금액
-$paymentBtn.addEventListener('click', () => {
-    let balance = +$balance.textContent;
-    let input = +$inputPayment.value;
-    let pocket = $pocketMoney.textContent.replace(/[^0-9]/g, '');
-    let pocketLeft = +pocket - input;
-    $balance.textContent = `${balance + input}`;
-    $pocketMoney.textContent = pocketLeft;
-    $inputPayment.value = '';
-});
-
-for (let i = 0; i < $itemList; i++) {
-    console.log($itemList);
-    console.log(data[i]);
+async function getCola() {
+    const res = await fetch(
+        'https://raw.githubusercontent.com/waterbinnn/vending-machine/main/js/data.json'
+    );
+    const data = await response.json();
+    console.log(data);
 }
+getCola();
 
 // 카트 부분
 $item.forEach((item) =>
@@ -82,3 +71,14 @@ $item.forEach((item) =>
         }
     })
 );
+
+// 잔액 , 입금액
+$paymentBtn.addEventListener('click', () => {
+    let balance = +$balance.textContent;
+    let input = +$inputPayment.value;
+    let pocket = $pocketMoney.textContent.replace(/[^0-9]/g, '');
+    let pocketLeft = +pocket - input;
+    $balance.textContent = `${balance + input}`;
+    $pocketMoney.textContent = pocketLeft;
+    $inputPayment.value = '';
+});
