@@ -20,17 +20,16 @@
 
     <section class="select-part">
       <h2 class="sc-out">Cola</h2>
-      <ul class="my-cola">
-        <li>
-          <button id="cola-item" type="button" class="cola-item">
+      <ul id="cola-list" class="my-cola">
+        <!-- <li>
+          <button id="Original_Cola" type="button" class="cola-item">
             <img src="./images/Original_Cola.svg" alt="original cola">
             <strong class="item-name">Original_Cola</strong>
             <span class="price">1000원</span>
           </button>
         </li>
-
         <li>
-          <button id="cola-item" class="cola-item sold-out" disabled>
+          <button id="Violet_Cola" class="cola-item sold-out" disabled>
             <img src="./images/Violet_Cola.svg" alt="violet cola">
             <strong class="item-name">
               Violet_Cola
@@ -39,7 +38,7 @@
           </button>
         </li>
         <li>
-          <button id="cola-item" class="cola-item">
+          <button id="Yellow_Cola" class="cola-item">
             <img src="./images/Yellow_Cola.svg" alt="yellow cola">
             <strong class="item-name">
               Yellow_Cola
@@ -48,7 +47,7 @@
           </button>
         </li>
         <li>
-          <button id="cola-item" class="cola-item">
+          <button id="Cool_Cola" class="cola-item">
             <img src="./images/Cool_Cola.svg" alt="cool cola">
             <strong class="item-name">
               Cool_Cola
@@ -57,7 +56,7 @@
           </button>
         </li>
         <li>
-          <button id="cola-item" class="cola-item">
+          <button id="Green_Cola" class="cola-item">
             <img src="./images/Green_Cola.svg" alt="green cola">
             <strong class="item-name">
               Green_Cola
@@ -66,14 +65,14 @@
           </button>
         </li>
         <li>
-          <button id="cola-item" class="cola-item">
+          <button id="Orange_Cola" class="cola-item">
             <img src="./images/Orange_Cola.svg" alt="orange cola">
             <strong class="item-name">
               Orange_Cola
             </strong>
             <span class="price">1000원</span>
           </button>
-        </li>
+        </li> -->
       </ul>
 
       <section class="charge-wrapper">
@@ -87,17 +86,13 @@
         <input type="text" placeholder="입금액 입력"
           oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="input-money"
           id="payment-input">
-        <button type="button" class="money-btn" id="payment">입금</button>
+        <button type="button" class="money-btn" id="payment-btn">입금</button>
 
         <ul id="cart" class="cola-get min">
-          <!-- <li class="order-item">
-            <img src="./images/Original_Cola.svg" alt="">
-            <span class="item-name">Original_Cola</span>
-            <span class="item-number">1</span> -->
-          </li>
+
         </ul>
 
-        <button class="get-btn" id="obtain-item">획득</button>
+        <button class="get-btn" id="obtain-btn">획득</button>
       </section>
 
     </section>
@@ -115,8 +110,8 @@
 
       <section class="get-wrapper">
         <h2 class="get-title">획득한음료</h2>
-        <ul class="cola-get wide">
-          <li class="order-item">
+        <ul id="obtain-cart" class="cola-get wide">
+          <li id="obtain-item" class="order-item">
             <img src="./images/Original_Cola.svg" alt="">
             <span class="item-name">Original_Cola</span>
             <span class="item-number">1</span>
@@ -128,7 +123,7 @@
   </section>
 
   <!-- <script type="module" src="js/data.js"></script> -->
-  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/index.js"></script>
 
 </body>
 
